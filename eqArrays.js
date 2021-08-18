@@ -12,7 +12,7 @@ const eqArrays = function (arrOne, arrTwo){
         return false
     } else {
         
-        for (i=0;i<arrOne.length;i++){
+        for (let i=0;i<arrOne.length;i++){
         if (arrOne[i]===arrTwo[i]){
             return true
         }
