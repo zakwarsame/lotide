@@ -28,7 +28,7 @@ const assertArraysEqual = function (arr1, arr2){
 const without = (source, itemsToRemove) => {
   let cleanedArray = [...source];
 
-  for (let i= cleanedArray.length-1;i >= 0; i--){
+  for (let i=0;i < cleanedArray.length; i++){
         let x = source.indexOf(itemsToRemove[i])
         if(x > -1){
             cleanedArray.splice(x, 1)            
