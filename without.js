@@ -45,3 +45,9 @@ console.log(without(words, ["lighthouse"])) // no need to capture return value f
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
+
+for (let planet in planetMoons){
+    let numberofMoons = planetMoons[planet]
+    console.log(`${planet} has ${numberofMoons} fr`)
+    }
+    
