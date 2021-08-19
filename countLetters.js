@@ -8,17 +8,19 @@ const assertEqual = function (actual, expected) {
 
 const countLetters = function (theSentence) {
   const results = {};
-  let sentenceArr = theSentence.split(" ").join("").split("");
-
-  for (const letter of sentenceArr) {
-    if (results[letter]) {
-      results[letter] += 1;
+  let sentenceArr = theSentence.split(" ").join('').split('')
+  console.log(sentenceArr)
+  for (const item of sentenceArr) {
+    if (results[item]) {
+      results[item] += 1;
     } else {
-      results[letter] = 1;
+      results[item] = 1;
     }
   }
   return results;
 };
+
+// console.log(countLetters("lighthouse in the house"))
 
 // TEST CASES
 
