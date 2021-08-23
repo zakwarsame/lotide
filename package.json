@@ -6,7 +6,7 @@
     "chai": "^4.3.4",
     "mocha": "^9.1.0"
   },
-  "name": "lotide",
+  "name": "@zakwarsame/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -101,11 +101,11 @@
     "url": "git+https://github.com/zakwarsame/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zak Warsame <zakwarsamee@gmail.com> (https://github.com/zakwarsame)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zakwarsame/lotide/issues"
   },
   "homepage": "https://github.com/zakwarsame/lotide#readme",
-  "description": ""
+  "description": "A mini clone of the Lodash library - functions that can manipulate arrays"
 }
