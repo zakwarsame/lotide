@@ -1,7 +1,22 @@
-const tail = require('../tail')
-const assertEqual = require('../assertEqual')
+
+const tail = require("../tail");
+const assert = require("chai").assert;
+
+describe("#tail", () => {
+    it("does not change the first tail function array", () => {
+      const words = ["Yo Yo", "Lighthouse", "Labs"];
+      tail(words);
+      assert.equal(words.length, 3);
+    });
+  it("returns length 2 for ['Hello', 'Lighthouse', 'Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.equal(result.length, 2);
+  });
+
+  it("returns 'Labs' for the second element in ['Hello', 'Lighthouse', 'Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.equal(result[1], 'Labs');
+  });
 
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements
+});
